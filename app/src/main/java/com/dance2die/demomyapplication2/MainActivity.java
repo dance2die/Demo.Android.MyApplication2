@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
     public void toastNameClick(View view){
         EditText myTextField = (EditText) findViewById(R.id.nameText);
         Toast.makeText(getApplicationContext(), myTextField.getText(), Toast.LENGTH_LONG).show();
+
+        ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        imageView.setImageResource(R.drawable.cat2);
     }
 
     @Override
